@@ -1,5 +1,4 @@
 {
-  "IndexPage": {
-    "title": "Hello!"
-  }
+  "a": {"title":"page a"},
+  "b": {"title":"page b"}
 }
