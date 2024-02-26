@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { useTranslations } from 'next-intl'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
+import { Client } from './_components/client'
 
 export const dynamic = 'force-dynamic'
 
@@ -29,6 +30,7 @@ export default function B({ params: { locale } }: { params: Params }) {
   return (
     <>
       <p>{t('title')}</p>
+      <Client />
     </>
   )
 }
