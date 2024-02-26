@@ -1,10 +1,8 @@
 import nextIntl from 'next-intl/plugin'
 
-const isDev = process.env.NODE_ENV === 'development'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: isDev ? '' : '/_web',
   trailingSlash: true,
   experimental: {
     optimizePackageImports: ['primitives'],
